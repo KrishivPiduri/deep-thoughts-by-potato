@@ -2,7 +2,7 @@
 import { useGLTF, Center } from '@react-three/drei';
 
 export default function Potato(props) {
-    const { scene } = useGLTF('/potato.glb');
+    const { scene } = useGLTF('./assets/potato.glb');
     return (
         <Center>
             <primitive object={scene} {...props} />
